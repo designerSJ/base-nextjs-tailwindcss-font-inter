@@ -1,0 +1,83 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+	font-family: "inter-var";
+	font-style: normal;
+	font-display: swap;
+	src: url("/fonts/inter-var.woff2") format("woff2");
+	font-weight: 100 900;
+}
+
+@layer base {
+	.background-color {
+		@apply bg-[#fffefc];
+	}
+
+	.primary-color {
+		@apply bg-[#e16259];
+	}
+
+	.text-color-extra-light {
+		@apply text-black/20;
+	}
+
+	.text-color-light {
+		@apply text-black/40;
+	}
+
+	.text-color-regular {
+		@apply text-[#040404];
+	}
+
+	.text-color-medium {
+		@apply text-black/60;
+	}
+
+	.text-color-dark {
+		@apply text-[#111111];
+	}
+
+	.text-weight-light {
+		@apply font-[400]
+	}
+
+	.text-weight-normal {
+		@apply font-[500]
+	}
+
+	.text-weight-medium {
+		@apply font-[650];
+	}
+
+	.text-weight-semibold {
+		@apply font-[700];
+	}
+
+	.text-weight-bold {
+		@apply font-[800];
+	}
+
+	.text-weight-black {
+		@apply font-[900];
+	}
+
+	.border-color {
+		@apply text-black/10;
+	}
+
+	.hover-color {
+		@apply bg-black/10;
+	}
+
+	.active-color {
+		@apply bg-black/20;
+	}
+}
+
+@layer utilities {
+	.rounded-fix {
+		-webkit-mask-image: -webkit-radial-gradient(white, black);
+	}
+}
