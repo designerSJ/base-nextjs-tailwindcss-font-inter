@@ -1,0 +1,1 @@
+# base-nextjs-tailwindcss-font-inter
